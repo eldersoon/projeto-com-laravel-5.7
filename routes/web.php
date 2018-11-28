@@ -7,7 +7,7 @@ Route::resource('posts', 'PostController');
 
 Route::get('/', function () {
     $lista = Post::listaNoticiasSite();
-    return view('site', compact('lista'));
+    return view('admin', compact('lista'));
 });
 
 
