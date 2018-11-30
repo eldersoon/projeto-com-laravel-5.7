@@ -21,7 +21,7 @@
                 $pathImage = url('imgs/posts/default.png');
 
                 if ($post->image)
-                    $pathImage = url("storage/app/public/posts/{$post->image}");
+                    $pathImage = url("img/img/{$post->image}");
             @endphp
             <img src="{{ $pathImage }}" class="img-circle" style="max-width: 60px; margin: 10px;">
         </div>
