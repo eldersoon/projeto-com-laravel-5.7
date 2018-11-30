@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', "Detalhes do post: {$post->title}")
+@section('title', "Detalhes da notícia: {$post->title}")
 
 @section('content')
 
-<h1>Detalhes do post <b>{{ $post->title }}</b></h1>
+<h1>Detalhes da notícia <b>{{ $post->title }}</b></h1>
 
 @php
     $pathImage = url('imgs/posts/default.png');
@@ -19,7 +19,7 @@
 <form action="{{ route('posts.destroy', $post->id) }}" method="post">
     @csrf
     <input type="hidden" name="_method" value="DELETE">
-    <button type="submit" class="btn btn-danger">Deletar o post: {{ $post->title }}</button>
+    <button type="submit" class="btn btn-danger">Deletar a notícia: {{ $post->title }}</button>
 </form>
 
 @endsection
