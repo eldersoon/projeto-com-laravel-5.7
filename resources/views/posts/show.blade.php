@@ -10,7 +10,7 @@
     $pathImage = url('imgs/posts/default.png');
 
     if ($post->image)
-        $pathImage = url("storage/posts/{$post->image}");
+        $pathImage = url("img/img/{$post->image}");
 @endphp
 <img src="{{ $pathImage }}" alt="{{ $post->title }}" class="img-circle">
 
